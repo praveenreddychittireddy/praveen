@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="./form.css">
+    <div>
+        <h1> Application Form</h1>
+        <h4>Note:Please fill the form carefully without any mistakes</h4>
+    </div>
+</head>
+<body>
+    <form action="./formmessage.html">
+        <fieldset>
+        <legend>Personal Details:</legend>
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+        </div>
+        <br>
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" >
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email id">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"  placeholder="Enter your Password here" pattern="[A-Z]{1}[a-z]{5}[1-9]{2}" autofocus required >
+        </div>
+        <br>
+        <div>
+            <label for="confirmpassword">Confirm Password:
+            </label>
+            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Retype your password here" autofocus required>
+        </div>
+        </fieldset>
+        <br>
+        <br>
+        <div>
+            
+            <fieldset>
+            <legend>Preffered Programming Language:</legend>
+            <select name="language" id="language" >
+                <option value="Select">Select</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+            </select>
+            </fieldset>
+        </div>
+        <br> 
+        <div>
+            <fieldset>
+                <legend>Date&Time of Availability:</legend>
+                <input type="date" name="date" id="date" required>
+                <br>
+                <br>
+                <select name="time" id="time" required>
+                    <option value="9AM">9AM</option>
+                    <option value="11AM">11AM</option>
+                    <option value="1PM">1PM</option>
+                    <option value="3PM">3PM</option>
+                    <option value="5PM">5PM</option>
+                </select>
+            </fieldset>
+        </div>
+        <br>
+
+        <fieldset>
+            <legend for="Gender">Gender:</legend>
+            <input type="radio" name="male">Male <br>
+            <input type="radio" name="female">Female <br>
+            <input type="radio" name="other">Other <br>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend for="telephone">Phone Number:</legend>
+            <input type="tel" name="telephone" id="telephone" placeholder="enter your mobile number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+        
+        <br>
+        <div>
+            <label for="address">Address:</label><br>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+        </div>
+        <br>
+        </fieldset>
+        <br>
+            <button>Submit</button>
+        <br>
+
+    </form>
+</body>
+</html>
